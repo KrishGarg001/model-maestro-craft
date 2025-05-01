@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Cube } from 'lucide-react';
+import { Package } from 'lucide-react';
 
 interface ModelViewerProps {
   modelUrl: string | null;
@@ -26,7 +26,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelUrl, isLoading }) => {
           <div className="relative">
             <div className="absolute inset-0 rounded-full bg-primary/20 animate-ping"></div>
             <div className="w-16 h-16 rounded-full bg-primary/30 flex items-center justify-center animate-pulse">
-              <Cube className="h-8 w-8 text-primary" />
+              <Package className="h-8 w-8 text-primary" />
             </div>
           </div>
           <p className="mt-4 text-lg font-medium text-foreground/80">Generating 3D model...</p>
@@ -41,7 +41,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelUrl, isLoading }) => {
       <div className="scene-container grid-pattern flex items-center justify-center border border-border/50">
         <div className="flex flex-col items-center text-center p-6">
           <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center mb-4">
-            <Cube className="h-8 w-8 text-muted-foreground" />
+            <Package className="h-8 w-8 text-muted-foreground" />
           </div>
           <p className="text-lg font-medium text-foreground/80">No model generated yet</p>
           <p className="mt-2 text-sm text-muted-foreground">Upload an image or enter a text prompt to get started</p>
@@ -58,7 +58,7 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelUrl, isLoading }) => {
             {/* Placeholder for 3D model preview */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-accent/40 rounded-lg animate-pulse-slow"></div>
             <div className="absolute inset-2 bg-background/80 backdrop-blur-sm rounded-lg flex items-center justify-center">
-              <Cube className="h-12 w-12 text-primary/70" />
+              <Package className="h-12 w-12 text-primary/70" />
             </div>
           </div>
         </div>
