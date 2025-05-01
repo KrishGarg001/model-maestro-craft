@@ -11,11 +11,8 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelUrl, isLoading }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // In a real implementation, we would initialize a 3D viewer library like Three.js here
-    // and load the model. For this demo, we're just showing a placeholder.
     if (modelUrl && containerRef.current) {
       console.log("Loading 3D model from:", modelUrl);
-      // Initialize 3D viewer with the model
     }
   }, [modelUrl]);
 
@@ -55,7 +52,6 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelUrl, isLoading }) => {
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="animate-floating">
           <div className="w-32 h-32 relative">
-            {/* Placeholder for 3D model preview */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-accent/40 rounded-lg animate-pulse-slow"></div>
             <div className="absolute inset-2 bg-background/80 backdrop-blur-sm rounded-lg flex items-center justify-center">
               <Package className="h-12 w-12 text-primary/70" />
