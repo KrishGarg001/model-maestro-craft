@@ -1,0 +1,23 @@
+
+# Core dependencies
+numpy==1.24.3
+pillow==10.0.0
+trimesh==3.22.4
+matplotlib==3.7.2
+scipy==1.11.2
+opencv-python==4.8.0.76
+
+# For 3D model handling
+PyMCubes==0.1.4
+pyrender==0.1.45
+
+# For web service (in a real implementation)
+# flask==2.3.3
+# gunicorn==21.2.0
+# flask-cors==4.0.0
+
+# For AI models (in a real implementation)
+# torch==2.0.1
+# torchvision==0.15.2
+# diffusers==0.21.4
+# transformers==4.34.0
