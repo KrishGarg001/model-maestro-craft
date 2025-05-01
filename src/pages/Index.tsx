@@ -72,8 +72,6 @@ const Index = () => {
           </div>
           
           <DownloadSection modelUrl={modelUrl} />
-          
-          {/* Information Section */}
           <div className="w-full max-w-3xl mt-8">
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-card/50 backdrop-blur-sm border border-border p-5 rounded-lg">
