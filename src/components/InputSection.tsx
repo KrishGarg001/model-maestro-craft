@@ -22,8 +22,6 @@ const InputSection: React.FC<InputSectionProps> = ({ onGenerate, isGenerating })
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    
-    // Check if file is an image
     if (!file.type.startsWith('image/')) {
       toast({
         title: "Invalid file type",
@@ -32,8 +30,6 @@ const InputSection: React.FC<InputSectionProps> = ({ onGenerate, isGenerating })
       });
       return;
     }
-    
-    // Check file size (limit to 5MB)
     if (file.size > 5 * 1024 * 1024) {
       toast({
         title: "File too large",
