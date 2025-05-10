@@ -28,6 +28,7 @@ pip install -r requirements.txt
 python model_generation.py
 ```
 
+
 3. **Integration with a web service**
 
 In a production environment, this code would be wrapped in a Flask or FastAPI service and expose endpoints that the React frontend could call.
