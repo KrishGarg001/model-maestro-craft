@@ -66,3 +66,4 @@ const ModelViewer: React.FC<ModelViewerProps> = ({ modelUrl, isLoading }) => {
 };
 
 export default ModelViewer;
+
