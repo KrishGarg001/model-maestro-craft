@@ -50,3 +50,4 @@ const DownloadSection: React.FC<DownloadSectionProps> = ({ modelUrl }) => {
 };
 
 export default DownloadSection;
+
