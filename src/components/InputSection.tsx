@@ -49,6 +49,7 @@ const InputSection: React.FC<InputSectionProps> = ({ onGenerate, isGenerating })
     setImageFile(null);
     setPreviewUrl(null);
   };
+
   
   const handleGenerate = () => {
     if (activeTab === "text" && textPrompt.trim()) {
