@@ -101,6 +101,7 @@ class Model3DGenerator:
         except Exception as e:
             print(f"Error saving model: {e}")
             raise
+
     
     def visualize_model(self, mesh, save_path=None):
         try:
